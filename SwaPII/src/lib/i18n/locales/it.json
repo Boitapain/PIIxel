@@ -3,7 +3,8 @@
         "dashboard": "Cruscotto",
         "projects": "Progetti",
         "datasets": "Set di dati",
-        "models": "Modelli"
+        "models": "Modelli",
+        "pricing": "Prezzi"
     },
     "home": {
         "title": "SwaPII",
@@ -42,7 +43,16 @@
         "terms_agreement": "Registrandoti, accetti i nostri",
         "terms_service": "Termini di Servizio",
         "privacy_policy": "Politica sulla Privacy",
-        "and": "e"
+        "and": "e",
+        "forgot_password": "Password dimenticata?",
+        "reset": "Reimposta",
+        "new_password": "Nuova Password",
+        "confirm_password": "Conferma Password",
+        "reset_no_session": "Non sei connesso. Per favore, reimposta la tua password.",
+        "reset_title": "Reimposta Password",
+        "reset_subtitle": "Per favore, fornisci la tua nuova password.",
+        "set_new_password": "Reimposta Password",
+        "back_to_signin": "Torna all'accesso"
     },
         "profile": {
             "title": "Il tuo profilo",

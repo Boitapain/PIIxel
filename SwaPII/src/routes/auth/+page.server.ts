@@ -1,5 +1,6 @@
 import { redirect, fail, error } from '@sveltejs/kit'
 import { PUBLIC_SUPABASE_EDGE_CREATE_PROFILE } from '$env/static/public'
+import * as publicEnv from '$env/dynamic/public'
 
 import type { Actions } from './$types'
 import { getUserProfile } from '$lib/server/db/repositories/profile'
@@ -112,5 +113,51 @@ export const actions: Actions = {
         //console.log('[LOG] AuthLogin - Redirect To path : /profile|ok');
         // Use throw redirect to ensure proper invalidation
         throw redirect(303, '/profile')
+    },
+    forgot: async ({ request, locals: { supabase } }) => {
+        const formData = await request.formData()
+        const email = formData.get('email') as string
+
+        if (!email) {
+            return fail(400, { error: 'Email is required' })
+        }
+
+        // compute redirectTo for the reset link so it lands on the auth route
+        // prefer an explicit PUBLIC_BASE_URL env var, otherwise derive from request headers
+    const dyn = publicEnv as unknown as Record<string, string | undefined>
+        let redirectTo: string | undefined = dyn.PUBLIC_BASE_URL
+            ? `${dyn.PUBLIC_BASE_URL!.replace(/\/$/, '')}/auth/reset`
+            : undefined
+
+        if (!redirectTo) {
+            const host = request.headers.get('host')
+            const forwardedProto = request.headers.get('x-forwarded-proto')
+            const proto = forwardedProto || 'http'
+            if (host) {
+                redirectTo = `${proto}://${host}/auth/reset`
+            }
+        }
+
+    // Debug: log the redirect URL we computed so we can verify what will be embedded in the email
+    console.log('[LOG] AuthForgot - computed redirectTo ->', redirectTo)
+
+    // Use Supabase reset password email flow with redirect
+    const { data, error: resetError } = await supabase.auth.resetPasswordForEmail(email, redirectTo ? { redirectTo } : undefined)
+        if (resetError) {
+            console.error('[LOG] AuthForgot - resetPasswordForEmail error :', resetError)
+            return fail(400, {
+                error: resetError.message || 'Failed to send password reset email',
+                email
+            })
+        }
+
+        // Return success message to show on the page. In development include the redirectTo for debugging.
+        const responseBody: any = {
+            success: true,
+            message: 'If that email exists in our system, a reset link has been sent.' ,
+            email
+        }
+        if (process.env.NODE_ENV === 'development') responseBody.debugRedirectTo = redirectTo
+        return responseBody
     },
 }

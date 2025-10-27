@@ -4,6 +4,9 @@
     import type { ActionData } from './$types'
 
     export let form: ActionData
+
+    // bind the email input so we can reuse it for the "forgot password" form
+    let email: string = form?.email || ''
 </script>
 
 <!-- Auth Section -->
@@ -63,21 +66,29 @@
                         <span>{form.error}</span>
                     </div>
                 {/if}
+                {#if form?.success}
+                    <div class="alert alert-success mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"></path>
+                        </svg>
+                        <span>{form.message || 'Password reset email sent'}</span>
+                    </div>
+                {/if}
                 
                 <form method="POST" action="?/login" class="space-y-4" use:enhance>
                     <div class="form-control">
                         <label class="label" for="email">
                             <span class="label-text text-black font-medium">{$_('auth.email')}</span>
                         </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            class="input input-bordered bg-white text-black border-gray-300 focus:border-black focus:outline-none w-full"
-                            placeholder="{$_('auth.email_placeholder')}"
-                            value={form?.email || ''}
-                            required
-                        />
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                bind:value={email}
+                                class="input input-bordered bg-white text-black border-gray-300 focus:border-black focus:outline-none w-full"
+                                placeholder="{$_('auth.email_placeholder')}"
+                                required
+                            />
                     </div>
 
                     <div class="form-control">
@@ -108,6 +119,12 @@
                             </button>
                         </div>
                     </div>
+                </form>
+
+                <!-- Forgot password form: posts only the email to the "forgot" action -->
+                <form method="POST" action="?/forgot" class="mt-2 text-center" use:enhance>
+                    <input type="hidden" name="email" value={email} />
+                    <button type="submit" class="link text-sm text-black underline">{$_('auth.forgot_password') || 'Forgot your password? Resend'}</button>
                 </form>
 
                 <div class="text-center mt-4">

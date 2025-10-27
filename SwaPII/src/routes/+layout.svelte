@@ -1,26 +1,28 @@
 <script>
-    import { invalidate } from "$app/navigation";
-    import { onMount } from "svelte";
-    import { _ } from "svelte-i18n";
-    import LanguageSwitcher from "$lib/components/LanguageSwitcher.svelte";
-    import "../app.css";
+	import { invalidate } from "$app/navigation";
+	import { onMount } from "svelte";
+	import { _ } from "svelte-i18n";
+	import LanguageSwitcher from "$lib/components/LanguageSwitcher.svelte";
+	import "../app.css";
 
-    let { data, children } = $props();
-    
-    // Use $derived for reactive values
-    let session = $derived(data.session);
-    let supabase = $derived(data.supabase);
-    let userProfile = $derived(data.userProfile);
+	let { data, children } = $props();
 
-    onMount(() => {
-        const { data: authData } = supabase.auth.onAuthStateChange((_, newSession) => {
-            if (newSession?.expires_at !== session?.expires_at) {
-                invalidate("supabase:auth");
-            }
-        });
+	// Use $derived for reactive values
+	let session = $derived(data.session);
+	let supabase = $derived(data.supabase);
+	let userProfile = $derived(data.userProfile);
 
-        return () => authData.subscription.unsubscribe();
-    });
+	onMount(() => {
+		const { data: authData } = supabase.auth.onAuthStateChange(
+			(_, newSession) => {
+				if (newSession?.expires_at !== session?.expires_at) {
+					invalidate("supabase:auth");
+				}
+			},
+		);
+
+		return () => authData.subscription.unsubscribe();
+	});
 </script>
 
 <!-- svelte-ignore a11y_no_noninteractive_tabindex -->
@@ -55,7 +57,11 @@
 					href="/"
 					class="btn-link decoration-transparent font-bold text-xl ml-2 flex items-center gap-2"
 				>
-					<img src="/favicon_transparent.svg" alt="SwaPII Logo" class="w-8 h-8" />
+					<img
+						src="/favicon_transparent.svg"
+						alt="SwaPII Logo"
+						class="w-8 h-8"
+					/>
 					SwaPII
 				</a>
 			</div>
@@ -64,16 +70,19 @@
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal px-1">
 					<li>
-						<a href="/dashboard">{$_('navigation.dashboard')}</a>
+						<a href="/dashboard">{$_("navigation.dashboard")}</a>
 					</li>
 					<li>
-						<a href="/projects">{$_('navigation.projects')}</a>
+						<a href="/pricing">{$_("navigation.pricing")}</a>
 					</li>
 					<li>
-						<a href="/datasets">{$_('navigation.datasets')}</a>
+						<a href="/projects">{$_("navigation.projects")}</a>
 					</li>
 					<li>
-						<a href="/models">{$_('navigation.models')}</a>
+						<a href="/datasets">{$_("navigation.datasets")}</a>
+					</li>
+					<li>
+						<a href="/models">{$_("navigation.models")}</a>
 					</li>
 				</ul>
 			</div>
@@ -126,23 +135,40 @@
 					href="/"
 					class="btn-link decoration-transparent font-bold text-xl ml-2 flex items-center gap-2"
 				>
-					<img src="/favicon_transparent.svg" alt="SwaPII Logo" class="w-8 h-8" />
+					<img
+						src="/favicon_transparent.svg"
+						alt="SwaPII Logo"
+						class="w-8 h-8"
+					/>
 					SwaPII
 				</a>
 			</div>
 			<!-- Mobile menu -->
 			<ul class="menu p-4 space-y-2">
 				<li>
-					<a href="/dashboard" class="text-base">{$_('navigation.dashboard')}</a>
+					<a href="/dashboard" class="text-base"
+						>{$_("navigation.dashboard")}</a
+					>
 				</li>
 				<li>
-					<a href="/projects" class="text-base">{$_('navigation.projects')}</a>
+					<a href="/pricing" class="text-base"
+						>{$_("navigation.pricing")}</a
+					>
 				</li>
 				<li>
-					<a href="/datasets" class="text-base">{$_('navigation.datasets')}</a>
+					<a href="/projects" class="text-base"
+						>{$_("navigation.projects")}</a
+					>
 				</li>
 				<li>
-					<a href="/models" class="text-base">{$_('navigation.models')}</a>
+					<a href="/datasets" class="text-base"
+						>{$_("navigation.datasets")}</a
+					>
+				</li>
+				<li>
+					<a href="/models" class="text-base"
+						>{$_("navigation.models")}</a
+					>
 				</li>
 			</ul>
 		</aside>

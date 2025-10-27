@@ -3,7 +3,8 @@
         "dashboard": "Dashboard",
         "projects": "Projects",
         "datasets": "Datasets",
-        "models": "Models"
+        "models": "Models",
+        "pricing": "Pricing"
     },
     "home": {
         "title": "SwaPII",
@@ -42,7 +43,16 @@
         "terms_agreement": "By signing up, you agree to our",
         "terms_service": "Terms of Service",
         "privacy_policy": "Privacy Policy",
-        "and": "and"
+        "and": "and",
+        "forgot_password": "Forgot Password?",
+        "reset": "Reset",
+        "new_password": "New Password",
+        "confirm_password": "Confirm Password",
+        "reset_no_session": "You are not signed in. Please reset your password.",
+        "reset_title": "Reset Password",
+        "reset_subtitle": "Please provide your new password.",
+        "set_new_password": "Set New Password",
+        "back_to_signin": "Back to Sign In"
     },
     "profile": {
         "title": "Your profile",

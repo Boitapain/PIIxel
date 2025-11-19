@@ -59,10 +59,10 @@
 				>
 					<img
 						src="/favicon_transparent.svg"
-						alt="SwaPII Logo"
+						alt="PIIxel Logo"
 						class="w-8 h-8"
 					/>
-					SwaPII
+					PIIxel
 				</a>
 			</div>
 
@@ -137,10 +137,10 @@
 				>
 					<img
 						src="/favicon_transparent.svg"
-						alt="SwaPII Logo"
+						alt="PIIxel Logo"
 						class="w-8 h-8"
 					/>
-					SwaPII
+					PIIxel
 				</a>
 			</div>
 			<!-- Mobile menu -->

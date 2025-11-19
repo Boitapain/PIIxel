@@ -7,13 +7,13 @@
         "pricing": "Preços"
     },
     "home": {
-        "title": "SwaPII",
+        "title": "PIIxel",
         "subtitle": "A plataforma definitiva para compartilhamento seguro de dados e proteção da privacidade. Troque seus dados com segurança com",
         "advanced_pii": "detecção avançada de DCP",
         "anonymization": "anonimização",
         "get_started": "Começar",
         "learn_more": "Saiba mais",
-        "why_choose_title": "Por que escolher SwaPII?",
+        "why_choose_title": "Por que escolher PIIxel?",
         "feature_secure_title": "Seguro e Privado",
         "feature_secure_desc": "Criptografia avançada e detecção de DCP para manter seus dados seguros e em conformidade.",
         "feature_fast_title": "Ultra Rápido",
@@ -21,7 +21,7 @@
         "feature_integration_title": "Integração Fácil",
         "feature_integration_desc": "APIs simples e painel intuitivo para começar em minutos.",
         "cta_title": "Pronto para começar?",
-        "cta_subtitle": "Junte-se a milhares de empresas que já usam o SwaPII para proteger seus dados sensíveis enquanto permitem análises poderosas e aprendizado de máquina.",
+        "cta_subtitle": "Junte-se a milhares de empresas que já usam o PIIxel para proteger seus dados sensíveis enquanto permitem análises poderosas e aprendizado de máquina.",
         "start_trial": "Teste Gratuito",
         "request_demo": "Solicitar Demo"
     },

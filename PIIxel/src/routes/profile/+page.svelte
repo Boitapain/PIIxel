@@ -37,12 +37,12 @@
 <!-- Hero/Header Section with KH-inspired decorations -->
 <div class="bg-base-100 relative overflow-hidden">
     <div class="absolute inset-0 opacity-20 pointer-events-none">
-        <div class="absolute top-4 left-4 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.8s;">◈</div>
-        <div class="absolute top-1/3 right-4 text-3xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.5s;">✧</div>
-        <div class="absolute bottom-4 left-1/3 text-5xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.2s;">✦</div>
-        <div class="absolute top-16 right-1/9 text-6xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.8s;">◇</div>
-        <div class="absolute bottom-1/4 right-1/2 text-2xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 1.2s;">✣</div>
-        <div class="absolute top-1/6 left-2/3 text-xl animate-pulse" style="color:var(--kh-purple);animation-delay: 2.8s;">✤</div>
+        <div class="absolute top-4 left-4 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.8s;">▣</div>
+        <div class="absolute top-1/3 right-4 text-3xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.5s;">■</div>
+        <div class="absolute bottom-4 left-1/3 text-5xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.2s;">◻</div>
+        <div class="absolute top-16 right-1/9 text-6xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.8s;">▪</div>
+        <div class="absolute bottom-1/4 right-1/2 text-2xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 1.2s;">▣</div>
+        <div class="absolute top-1/6 left-2/3 text-xl animate-pulse" style="color:var(--kh-purple);animation-delay: 2.8s;">□</div>
     </div>
 
     <div class="container mx-auto px-4 py-10 relative z-10">

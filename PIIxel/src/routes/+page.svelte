@@ -7,21 +7,21 @@
     <!-- Kingdom Hearts-inspired background elements -->
     <div class="absolute inset-0 opacity-25">
         <!-- Geometric symbols only with random positions, spread far apart -->
-        <div class="absolute top-4 left-4 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.8s;">◈</div>
-        <div class="absolute top-1/3 right-4 text-3xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.5s;">✧</div>
-        <div class="absolute top-2/8 left-2/7 text-3xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.5s;">✢</div>
-        <div class="absolute bottom-4 left-1/3 text-5xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.2s;">✦</div>
-        <div class="absolute top-3/4 left-2 text-3xl animate-pulse" style="color:var(--kh-rose);animation-delay: 0.3s;">◊</div>
-        <div class="absolute top-16 right-1/9 text-6xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.8s;">◇</div>
-        <div class="absolute bottom-1/4 right-1/2 text-2xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 1.2s;">✣</div>
-        <div class="absolute top-1/2 left-1/12 text-3xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 2.5s;">✩</div>
-        <div class="absolute top-2 right-1/6 text-2xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.7s;">✧</div>
-        <div class="absolute bottom-16 left-1/12 text-4xl animate-pulse" style="color:var(--kh-gold);animation-delay: 0.6s;">◈</div>
-        <div class="absolute top-1/6 left-2/3 text-xl animate-pulse" style="color:var(--kh-purple);animation-delay: 2.8s;">✤</div>
-        <div class="absolute bottom-1/3 right-1/12 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 1.3s;">✦</div>
-        <div class="absolute top-5/6 left-3/4 text-2xl animate-pulse" style="color:var(--kh-silver);animation-delay: 0.9s;">◊</div>
-        <div class="absolute bottom-8 right-1/6 text-4xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 2.1s;">◇</div>
-        <div class="absolute top-2/5 right-3/4 text-5xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.6s;">✧</div>
+        <div class="absolute top-4 left-4 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.8s;">▣</div>
+        <div class="absolute top-1/3 right-4 text-3xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.5s;">■</div>
+        <div class="absolute top-2/8 left-2/7 text-3xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.5s;">□</div>
+        <div class="absolute bottom-4 left-1/3 text-5xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.2s;">◻</div>
+        <div class="absolute top-3/4 left-2 text-3xl animate-pulse" style="color:var(--kh-rose);animation-delay: 0.3s;">□</div>
+        <div class="absolute top-16 right-1/9 text-6xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.8s;">▪</div>
+        <div class="absolute bottom-1/4 right-1/2 text-2xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 1.2s;">▣</div>
+        <div class="absolute top-1/2 left-1/12 text-3xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 2.5s;">◻</div>
+        <div class="absolute top-2 right-1/6 text-2xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.7s;">■</div>
+        <div class="absolute bottom-16 left-1/12 text-4xl animate-pulse" style="color:var(--kh-gold);animation-delay: 0.6s;">▣</div>
+        <div class="absolute top-1/6 left-2/3 text-xl animate-pulse" style="color:var(--kh-purple);animation-delay: 2.8s;">□</div>
+        <div class="absolute bottom-1/3 right-1/12 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 1.3s;">◻</div>
+        <div class="absolute top-5/6 left-3/4 text-2xl animate-pulse" style="color:var(--kh-silver);animation-delay: 0.9s;">□</div>
+        <div class="absolute bottom-8 right-1/6 text-4xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 2.1s;">▪</div>
+        <div class="absolute top-2/5 right-3/4 text-5xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.6s;">■</div>
     </div>
     
     <div class="hero-content text-center text-base-content relative z-10">
@@ -44,16 +44,16 @@
     <!-- Decorative elements -->
     <div class="absolute inset-0 opacity-20">
         <!-- Geometric symbols with random positions, spread far apart -->
-        <div class="absolute top-2 left-2 text-4xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.0s;">✧</div>
-        <div class="absolute bottom-2 right-2 text-5xl animate-pulse" style="color:var(--kh-gold);animation-delay: 1.8s;">◈</div>
-        <div class="absolute top-3/4 left-1/12 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 0.5s;">✦</div>
-        <div class="absolute bottom-1/4 right-1/12 text-6xl animate-pulse" style="color:var(--kh-silver);animation-delay: 2.1s;">◊</div>
-        <div class="absolute top-1/3 right-5/8 text-2xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.4s;">◇</div>
-        <div class="absolute top-6 left-5/9 text-3xl animate-pulse" style="color:var(--kh-purple);animation-delay: 2.3s;">✣</div>
-        <div class="absolute bottom-6 left-2/9 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.8s;">✢</div>
-        <div class="absolute top-1/2 right-3/4 text-2xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.6s;">✤</div>
-        <div class="absolute bottom-1/3 left-3/4 text-3xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 0.3s;">✧</div>
-        <div class="absolute top-5/6 right-5/11 text-xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.5s;">◈</div>
+        <div class="absolute top-2 left-2 text-4xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.0s;">■</div>
+        <div class="absolute bottom-2 right-2 text-5xl animate-pulse" style="color:var(--kh-gold);animation-delay: 1.8s;">▣</div>
+        <div class="absolute top-3/4 left-1/12 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 0.5s;">◻</div>
+        <div class="absolute bottom-1/4 right-1/12 text-6xl animate-pulse" style="color:var(--kh-silver);animation-delay: 2.1s;">□</div>
+        <div class="absolute top-1/3 right-5/8 text-2xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.4s;">▪</div>
+        <div class="absolute top-6 left-5/9 text-3xl animate-pulse" style="color:var(--kh-purple);animation-delay: 2.3s;">▣</div>
+        <div class="absolute bottom-6 left-2/9 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.8s;">□</div>
+        <div class="absolute top-1/2 right-3/4 text-2xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.6s;">□</div>
+        <div class="absolute bottom-1/3 left-3/4 text-3xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 0.3s;">■</div>
+        <div class="absolute top-5/6 right-5/11 text-xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.5s;">▣</div>
     </div>
     
     <div class="container mx-auto px-4 relative z-10">
@@ -158,16 +158,16 @@
     <!-- Background decorative elements -->
     <div class="absolute inset-0 opacity-20">
         <!-- Geometric symbols with random positions, spread far apart -->
-        <div class="absolute top-4 right-1/4 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.7s;">◊</div>
-        <div class="absolute bottom-4 right-3 text-5xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.4s;">✧</div>
-        <div class="absolute top-1/8 left-1/12 text-6xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.0s;">◈</div>
-        <div class="absolute bottom-1/6 right-1/12 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 0.9s;">✦</div>
-        <div class="absolute top-5/6 left-1/6 text-2xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.7s;">◇</div>
-        <div class="absolute top-1/3 left-1/6 text-4xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.1s;">✣</div>
-        <div class="absolute bottom-8 left-1/2 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 2.4s;">✢</div>
-        <div class="absolute top-1/2 right-3/4 text-2xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.5s;">✤</div>
-        <div class="absolute bottom-1/3 left-3/4 text-4xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.8s;">✧</div>
-        <div class="absolute top-9/15 right-1/2 text-xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 2.7s;">◈</div>
+        <div class="absolute top-4 right-1/4 text-4xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.7s;">□</div>
+        <div class="absolute bottom-4 right-3 text-5xl animate-pulse" style="color:var(--kh-silver);animation-delay: 1.4s;">■</div>
+        <div class="absolute top-1/8 left-1/12 text-6xl animate-pulse" style="color:var(--kh-gold);animation-delay: 2.0s;">▣</div>
+        <div class="absolute bottom-1/6 right-1/12 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 0.9s;">◻</div>
+        <div class="absolute top-5/6 left-1/6 text-2xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.7s;">▪</div>
+        <div class="absolute top-1/3 left-1/6 text-4xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 1.1s;">▣</div>
+        <div class="absolute bottom-8 left-1/2 text-3xl animate-pulse" style="color:var(--kh-emerald);animation-delay: 2.4s;">□</div>
+        <div class="absolute top-1/2 right-3/4 text-2xl animate-pulse" style="color:var(--kh-purple);animation-delay: 0.5s;">□</div>
+        <div class="absolute bottom-1/3 left-3/4 text-4xl animate-pulse" style="color:var(--kh-rose);animation-delay: 1.8s;">■</div>
+        <div class="absolute top-9/15 right-1/2 text-xl animate-pulse" style="color:var(--kh-cyan);animation-delay: 2.7s;">▣</div>
     </div>
     
     <div class="container mx-auto px-4 text-center relative z-10">
